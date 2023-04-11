@@ -1,0 +1,762 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    background-color: black !important; 
+}
+
+/* ------- REVELAR NO SCROLL ------- */
+
+.revelar{
+    position: relative;
+    transform: translateY(144px);
+    opacity: 0;
+    transition: .5s all ease;
+}
+
+.revelar.ativar{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+
+/* ------------------------------------------------ TELA mín 901px ------------------------------------------------ */
+
+
+    /* ------ MENU ---------------------------- */
+
+    header{
+        width: 150px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        align-items: center;
+        align-content: center;
+        position: fixed;
+        font-family: 'Satisfy', cursive;
+        z-index: 101;
+    }
+
+    nav ul{
+        height: 100vh;
+    }
+
+    nav li{
+        font-size: 25px;
+        text-align: center;
+        list-style: none;
+        margin: 25px 0;
+    }
+
+    nav a{
+        text-decoration: none;
+        color: rgb(90, 90, 90);
+        transition: 400ms;
+    }
+
+    nav a:hover{
+        color: white;
+    }
+
+    ul img{
+        width: 120px;
+    }
+
+
+    /* ------ SECTION ---------------------------- */
+
+    main{
+        width: 100%;
+    }
+
+    #home{
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        background: linear-gradient(rgb(0, 0, 0), rgba(6, 0, 59, 0.884)), url(/imagens/Avatares/Avatar9-1.png);
+        background-position: center center;
+        background-size: cover;
+        background-position-y: 0px;
+        background-repeat: no-repeat;
+    }
+
+    #sobre{
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+    #hardskills{
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        background-color: black;
+    }
+
+    #projetos{
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        box-sizing: border-box;
+        color: white;
+    }
+
+    #contato{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    /* ------ HOME ---------------------------- */
+
+    .text-home{
+        width: 100%;
+        margin-left: 150px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .text-home div{
+        font-size: 50px;
+        margin: auto;
+    }
+
+    .segun-div-home{
+        display: flex;
+    }
+
+
+    .quinta-div-home{
+        display: flex;
+    }
+
+    .margin-nome{
+        margin: 0 25px;
+    }
+
+
+    /* ------ SOBRE ---------------------------- */
+
+    .container-sobre{
+        width: 60%;
+        margin-left: 150px;
+    }
+
+    .container-sobre h1{
+        font-size: 40px;
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+    }
+
+    .container-sobre h3{
+        font-size: 22px;
+        color: rgb(90, 90, 90);
+        font-family: 'Sono', sans-serif;
+        margin: 15px 0;
+    }
+
+    .margen-text{
+        margin-left: 20px;
+    }
+
+    .text-sobre{
+        color: white;
+        font-family: 'Oswald', sans-serif;
+    }
+
+
+    /* ------ HARD SKILLS ---------------------------- */
+
+    .container-hardskills{
+        margin-left: 150PX;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .title-hardskills{
+        width: 90%;
+        margin: 50px auto;
+        font-size: 22px;
+        font-family: 'Libre Baskerville', serif;
+        filter: drop-shadow(2px 5px 1px rgb(49, 49, 49));
+    }
+
+    .icons-hardskills{
+        font-size: 180px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .icon-do-html{
+        width: 180px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .icon-do-html:hover{
+        transition: all 1s ease;
+        filter: drop-shadow(5px 5px 1px rgba(255, 123, 0, 0.6));
+    }
+
+    .icon-do-css{
+        width: 180px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .icon-do-css:hover{
+        transition: all 1s ease;
+        filter: drop-shadow(5px 5px 1px rgba(0, 102, 255, 0.6));
+    }
+
+    .icon-do-js{
+        width: 180px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .icon-do-js:hover{
+        transition: all 1s ease;
+        filter: drop-shadow(5px 5px 1px rgba(255, 217, 0, 0.6));
+    }
+
+    .icon-do-mysql{
+        width: 180px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .icon-do-mysql:hover{
+        transition: all 1s ease;
+        filter: drop-shadow(5px 5px 1px rgba(0, 17, 255, 0.6));
+    }
+
+    .icon-do-mongo{
+        width: 180px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .icon-do-mongo:hover{
+        transition: all 1s ease;
+        filter: drop-shadow(5px 5px 1px rgba(0, 255, 42, 0.6));
+    }
+
+    .icon-do-bootstrap{
+        width: 180px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .icon-do-bootstrap:hover{
+        transition: all 1s ease;
+        filter: drop-shadow(5px 5px 1px rgba(89, 0, 255, 0.6));
+    }
+
+    .icons-hardskills i:hover{
+        animation: anima-icons-hardskills 1s  linear;
+    }
+
+    /* ------ PROJETOS ---------------------------- */
+
+    .container-projetos{
+        width: 100%;
+        margin-left: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tilte-projetos{
+        width: 100%;
+        text-align: center;
+        font-family: 'Noto Serif', serif;
+        filter: drop-shadow(5px 5px 2px rgb(68, 68, 68));
+        text-decoration: underline;
+    }
+
+   .container-carrossel{
+        width: 90%;
+        margin: 20px auto;
+   }
+
+   .carousel-item img{
+        filter: opacity(60%);
+   }
+
+   .title-carrossel{
+        color: white;
+        filter: drop-shadow( 2px 2px 1px rgb(0, 0, 0));
+        font-size: 25px;
+        font-family: 'Libre Baskerville', serif;
+   }
+
+   .p-carrossel{
+        color: white;
+        filter: drop-shadow( 2px 2px 1px rgb(0, 0, 0));
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+   }
+
+   .btn-carrossel button{
+        background-color: rgb(185, 255, 249);
+        padding: 5px 15px;
+        margin: 5px;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Merienda', cursive;
+        transition: all .6s ease-in-out;
+        box-shadow: 2px 2px 1px black;
+   }
+
+   .btn-carrossel button:hover{
+        background-color: blue;
+        color: white;
+        padding: 5px 10px;
+        box-shadow: 2px 2px 1px rgb(49, 49, 49);
+   }
+
+   .btn-carrossel button i {
+        font-size: 18px;
+        margin: 0 3px;
+   }
+
+   .btn-projetos-mobile, .btn-mobile{
+        display: none;
+    }
+
+
+    /* ------ CONTATO ---------------------------- */
+    
+    .container-contato{
+        margin-left: 150px;
+        width: 600px;
+        height: 500px;
+    }
+
+    .card-um, .card-dois, .card-tres, .card-quatro{
+        width: 600px;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .card-um button{
+        width: 125px;
+        height: 50px;
+        margin-left:20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px #A4A4A4;
+        background-color: #A4A4A4;
+        font-family: 'Merienda', cursive;
+      }
+
+      .card-dois button{
+        width: 125px;
+        height: 50px;
+        margin-left:20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px #A4A4A4;
+        background-color: #A4A4A4;
+        font-family: 'Merienda', cursive;
+      }
+
+      .card-tres button{
+        width: 125px;
+        height: 50px;
+        margin-left:20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px #A4A4A4;
+        background-color: #A4A4A4;
+        font-family: 'Merienda', cursive;
+      }
+
+      .card-quatro button{
+        width: 125px;
+        height: 50px;
+        margin-left:20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px #A4A4A4;
+        background-color: #A4A4A4;
+        font-family: 'Merienda', cursive;
+      }
+      
+      .aparecer{
+        display: flex;
+        flex-direction: column;
+        width: 275px;
+        height: 130px;
+        margin-left: 30px;
+        justify-content: center;
+        align-items: center;
+        background-color: gree;
+      }
+      
+      .bi-linkedin {
+        font-size: 40px;
+        color: #0077c6;
+      }
+
+      .bi-github {
+        font-size: 40px;
+        color: #A4A4A4;
+      }
+
+      .bi-envelope-at{
+        font-size: 40px;
+        color: #fff;
+      }
+
+      .bi-whatsapp{
+        font-size: 40px;
+        color: #00ff0d;
+      }
+      
+      .aparecer a {
+        text-decoration: none;
+        font-size: 15px;
+        margin: 5px;
+        color: rgb(90, 90, 90);
+        transition: all .5s ease;
+      }
+
+      .aparecer a:hover{
+        font-size: 17px;
+        color: white;
+      }
+
+
+
+
+
+/* ------------------------------------------------ TELA 451px á 900px ------------------------------------------------ */
+
+
+@media (min-width: 451px) and (max-width: 900px){
+
+    /* ------ MENU ---------------------------- */
+
+    body{
+        display: block;
+    }
+
+    header{
+        display: inline-block;
+        width: 100%;
+        height: 10vh;
+        margin: 88vh 0 2vh;
+        border-radius: 50px;
+        background-color: transparent;
+    }
+
+    ul{
+        display: flex;
+        padding: 0 10px;
+        justify-content: space-around;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    header a{
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    header p{
+        margin: 10px;
+    }
+
+    /* ------ HOME ---------------------------- */
+
+    .text-home{
+        margin-left: 0;
+        text-align: center;
+        height: 90vh;
+    }
+
+     /* ------ SOBRE ---------------------------- */
+
+     #sobre{
+        height: 80vh;
+    }
+    
+     .container-sobre{
+        width: 80%;
+        margin: 10px;
+    }
+
+
+    /* ------ HARD SKILLS ---------------------------- */
+
+    .container-hardskills{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .title-hardskills{
+        margin: 50px auto;
+        font-size: 18px;
+        font-family: 'Libre Baskerville', serif;
+        filter: drop-shadow(2px 5px 1px rgb(49, 49, 49));
+    }
+
+    .icons-hardskills{
+        width: 80%;
+        margin: 10px 10%;
+        font-size: 200px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .icons-hardskills div{
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+    }
+
+    /* ------ PROJETOS ---------------------------- */
+
+    #projetos{
+        height: 80vh;
+    }
+
+    .container-projetos{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tilte-projetos h1{
+        font-size: 45px;
+        margin-bottom: 60px;
+    }
+
+    .btn-projetos-mobile, .btn-mobile{
+        display: none;
+    }
+}
+
+/* ------------------------------------------------ TELA máx 450px ------------------------------------------------ */
+
+
+@media (max-width: 450px){
+
+    /* ------ MENU ---------------------------- */
+
+    body{
+        display: block;
+    }
+
+    header{
+        display: inline-block;
+        width: 100%;
+        height: 10vh;
+        margin: 88vh 0 2vh;
+        border-radius: 50px;
+        background-color: transparent;
+    }
+    
+    header p {
+        font-size: 15px;
+    }
+
+    ul{
+        display: flex;
+        padding: 0 10px;
+        justify-content: space-around;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+     /* ------ HOME ---------------------------- */
+
+     .text-home{
+        margin-left: 0;
+        text-align: center;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* ------ SOBRE ---------------------------- */
+
+    #sobre{
+        height: 100vh;
+    }
+    
+    .container-sobre{
+        width: 90%;
+        margin: 5%;
+    }
+
+    .container-sobre h1{
+        font-size: 35px;
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+    }
+
+    .container-sobre h3{
+        font-size: 16px;
+        color: rgb(90, 90, 90);
+        font-family: 'Sono', sans-serif;
+        margin: 15px 0;
+    }
+
+    .margen-text{
+        margin-left: 20px;
+    }
+
+    .text-sobre{
+        color: white;
+        font-family: 'Oswald', sans-serif;
+    }
+
+
+
+    /* ------ HARD SKILLS ---------------------------- */
+
+    .container-hardskills{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .title-hardskills{
+        margin: 50px auto;
+        font-size: 18px;
+        font-family: 'Libre Baskerville', serif;
+        filter: drop-shadow(2px 5px 1px rgb(49, 49, 49));
+    }
+
+    .icons-hardskills{
+        width: 80%;
+        margin: 10px 10%;
+        font-size: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .icons-hardskills div{
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+    }
+
+    /* ------ PROJETOS ---------------------------- */
+
+    #projetos{
+        height: 80vh;
+    }
+
+    .container-projetos{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tilte-projetos h1{
+        font-size: 25px;
+        margin-bottom: 60px;
+    }
+
+    .btn-projetos-mobile{
+        text-decoration: none;
+        width: 230px;
+        height: 40px;
+    }
+
+    .btn-projetos-mobile i{
+        margin: 0 7px;
+    }
+
+    .btn-mobile {
+        width: 230px;
+        height: 40px;
+        margin-top: 30px;
+        font-size: 22px;
+        font-family: 'Merienda', cursive;
+        background-color: rgb(185, 255, 249);
+        border-radius: 25px;
+        box-shadow: 3px 3px 3px rgb(49, 49, 49);
+    }
+
+
+     /* ------ CONTATO ---------------------------- */
+
+     .aparecer{
+        display: flex;
+        flex-direction: column;
+        width: 275px;
+        height: 130px;
+        margin-left: -5px;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+
+
+
+
+
+    .margin-nome{
+        margin: 0 10px;
+    }
+}
